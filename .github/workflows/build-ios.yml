@@ -29,9 +29,9 @@ jobs:
           status=${PIPESTATUS[0]}
           if [ "$status" -ne 0 ]; then
             echo "::group::xcodebuild errors"
-            grep -Ei "error:|failed|ARCHIVE FAILED|The following build commands failed|CompileSwift|SwiftCompile|actool|ibtool" xcodebuild.log | tail -n 80 || true
+            grep -Ei "(^|[[:space:]])error:|cannot |missing |invalid |no such module|ARCHIVE FAILED|The following build commands failed" xcodebuild.log | tail -n 80 || true
             echo "::endgroup::"
-            errors=$(grep -Ei "error:|failed|ARCHIVE FAILED|The following build commands failed|CompileSwift|SwiftCompile|actool|ibtool" xcodebuild.log | tail -n 40)
+            errors=$(grep -Ei "(^|[[:space:]])error:|cannot |missing |invalid |no such module|ARCHIVE FAILED|The following build commands failed" xcodebuild.log | tail -n 40)
             if [ -z "$errors" ]; then
               errors=$(tail -n 40 xcodebuild.log)
             fi
