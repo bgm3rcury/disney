@@ -16,6 +16,7 @@ jobs:
 
       - name: Build unsigned app
         run: |
+          set -o pipefail
           xcodebuild archive \
             -project DisneyQueues.xcodeproj \
             -scheme DisneyQueues \
@@ -24,7 +25,14 @@ jobs:
             -destination "generic/platform=iOS" \
             CODE_SIGNING_ALLOWED=NO \
             CODE_SIGNING_REQUIRED=NO \
-            CODE_SIGN_IDENTITY=""
+            CODE_SIGN_IDENTITY="" 2>&1 | tee xcodebuild.log
+
+      - name: Upload build log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: xcodebuild-log
+          path: xcodebuild.log
 
       - name: Package IPA
         run: |
