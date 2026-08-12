@@ -1,0 +1,13 @@
+{
+    "images":  [
+                   {
+                       "filename":  "pirates-of-the-caribbean.png",
+                       "scale":  "1x",
+                       "idiom":  "universal"
+                   }
+               ],
+    "info":  {
+                 "author":  "xcode",
+                 "version":  1
+             }
+}

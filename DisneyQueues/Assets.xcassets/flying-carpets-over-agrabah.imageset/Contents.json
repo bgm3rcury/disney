@@ -1,0 +1,13 @@
+{
+    "images":  [
+                   {
+                       "filename":  "flying-carpets-over-agrabah.png",
+                       "scale":  "1x",
+                       "idiom":  "universal"
+                   }
+               ],
+    "info":  {
+                 "author":  "xcode",
+                 "version":  1
+             }
+}

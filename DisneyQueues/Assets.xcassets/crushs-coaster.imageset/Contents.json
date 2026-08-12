@@ -1,0 +1,13 @@
+{
+    "images":  [
+                   {
+                       "filename":  "crushs-coaster.png",
+                       "scale":  "1x",
+                       "idiom":  "universal"
+                   }
+               ],
+    "info":  {
+                 "author":  "xcode",
+                 "version":  1
+             }
+}
