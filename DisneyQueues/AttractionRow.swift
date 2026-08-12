@@ -58,7 +58,7 @@ private struct AttractionThumbnail: View {
 
     var body: some View {
         Group {
-            if let imageName = attraction.imageName, let image = UIImage(named: imageName) {
+            if let imagePath = attraction.imagePath, let image = UIImage(contentsOfFile: imagePath) {
                 Image(uiImage: image)
                     .resizable()
                     .scaledToFill()

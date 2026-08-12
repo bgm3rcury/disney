@@ -38,14 +38,25 @@ final class QueueStore: ObservableObject {
             await refresh()
 
             while !Task.isCancelled {
-                let seconds = max(1, Int(nextRefresh.timeIntervalSinceNow))
-                try? await Task.sleep(nanoseconds: UInt64(seconds) * 1_000_000_000)
-                await refresh()
+                try? await Task.sleep(nanoseconds: 1_000_000_000)
+                await refreshIfNeeded()
             }
         }
     }
 
+    func refreshIfNeeded() async {
+        guard !isLoading, Date() >= nextRefresh else {
+            return
+        }
+
+        await refresh()
+    }
+
     func refresh() async {
+        guard !isLoading else {
+            return
+        }
+
         isLoading = true
         errorMessage = nil
 
@@ -55,8 +66,9 @@ final class QueueStore: ObservableObject {
 
             attractionsByPark[.disneyland] = try await disneyland
             attractionsByPark[.adventureWorld] = try await adventureWorld
-            lastRefresh = Date()
-            nextRefresh = Date().addingTimeInterval(Self.refreshInterval)
+            let refreshedAt = Date()
+            lastRefresh = refreshedAt
+            nextRefresh = refreshedAt.addingTimeInterval(Self.refreshInterval)
             await notificationService.evaluate(attractions: allAttractions, favorites: favorites)
         } catch {
             errorMessage = "Could not refresh queue times. Showing the latest available data."

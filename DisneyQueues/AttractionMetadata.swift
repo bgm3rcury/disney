@@ -43,6 +43,7 @@ struct AttractionMetadata: Codable, Equatable {
     let isCoaster: Bool
     let parentRideID: Int?
     let imageName: String
+    let imageFileName: String?
 
     enum CodingKeys: String, CodingKey {
         case parkID
@@ -53,6 +54,7 @@ struct AttractionMetadata: Codable, Equatable {
         case isCoaster
         case parentRideID
         case imageName
+        case imageFileName
     }
 }
 
@@ -120,6 +122,19 @@ extension Attraction {
 
     var imageName: String? {
         metadata?.imageName
+    }
+
+    var imagePath: String? {
+        guard let imageFileName = metadata?.imageFileName else {
+            return nil
+        }
+
+        let fileName = imageFileName as NSString
+        return Bundle.main.path(
+            forResource: fileName.deletingPathExtension,
+            ofType: fileName.pathExtension,
+            inDirectory: "AttractionImages"
+        )
     }
 
     var isCoaster: Bool {

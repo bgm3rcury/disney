@@ -1,64 +1,969 @@
 [
-  {"parkID":4,"rideID":25,"name":"Big Thunder Mountain","simpleCategories":["coasters","bigThrills","family"],"officialTags":["Big Thrills","Family Adventure"],"isCoaster":true,"imageName":"big-thunder-mountain"},
-  {"parkID":4,"rideID":8,"name":"Star Wars Hyperspace Mountain","simpleCategories":["coasters","bigThrills"],"officialTags":["Big Thrills","Star Wars"],"isCoaster":true,"imageName":"star-wars-hyperspace-mountain"},
-  {"parkID":4,"rideID":7278,"name":"Star Wars Hyperspace Mountain Single Rider","simpleCategories":["coasters","bigThrills","singleRider"],"officialTags":["Big Thrills","Single Rider"],"isCoaster":true,"parentRideID":8,"imageName":"star-wars-hyperspace-mountain"},
-  {"parkID":4,"rideID":2,"name":"Indiana Jones™ and the Temple of Peril","simpleCategories":["coasters","bigThrills"],"officialTags":["Big Thrills"],"isCoaster":true,"imageName":"indiana-jones-and-the-temple-of-peril"},
-  {"parkID":4,"rideID":7306,"name":"Indiana Jones and the Temple of Peril Single Rider","simpleCategories":["coasters","bigThrills","singleRider"],"officialTags":["Big Thrills","Single Rider"],"isCoaster":true,"parentRideID":2,"imageName":"indiana-jones-and-the-temple-of-peril"},
-  {"parkID":28,"rideID":32,"name":"Crush's Coaster","simpleCategories":["coasters","bigThrills","family"],"officialTags":["Big Thrills","Family Adventure"],"isCoaster":true,"imageName":"crushs-coaster"},
-  {"parkID":28,"rideID":7277,"name":"Crush's Coaster Single Rider","simpleCategories":["coasters","bigThrills","singleRider"],"officialTags":["Big Thrills","Single Rider"],"isCoaster":true,"parentRideID":32,"imageName":"crushs-coaster"},
-  {"parkID":28,"rideID":10848,"name":"Avengers Assemble: Flight Force","simpleCategories":["coasters","bigThrills"],"officialTags":["Big Thrills","Marvel"],"isCoaster":true,"imageName":"avengers-assemble-flight-force"},
-  {"parkID":28,"rideID":10849,"name":"Avengers Assemble: Flight Force Single Rider","simpleCategories":["coasters","bigThrills","singleRider"],"officialTags":["Big Thrills","Single Rider","Marvel"],"isCoaster":true,"parentRideID":10848,"imageName":"avengers-assemble-flight-force"},
-  {"parkID":28,"rideID":34,"name":"RC Racer","simpleCategories":["bigThrills","family"],"officialTags":["Big Thrills","Family Adventure"],"isCoaster":false,"imageName":"rc-racer"},
-  {"parkID":28,"rideID":7280,"name":"RC Racer Single Rider","simpleCategories":["bigThrills","singleRider"],"officialTags":["Big Thrills","Single Rider"],"isCoaster":false,"parentRideID":34,"imageName":"rc-racer"},
-  {"parkID":28,"rideID":40,"name":"The Twilight Zone Tower of Terror","simpleCategories":["bigThrills"],"officialTags":["Big Thrills"],"isCoaster":false,"imageName":"the-twilight-zone-tower-of-terror"},
-  {"parkID":28,"rideID":10845,"name":"Spider-Man W.E.B. Adventure","simpleCategories":["family"],"officialTags":["Family Adventure","Marvel"],"isCoaster":false,"imageName":"spider-man-web-adventure"},
-  {"parkID":28,"rideID":10846,"name":"Spider-Man W.E.B. Adventure Single Rider","simpleCategories":["family","singleRider"],"officialTags":["Family Adventure","Single Rider","Marvel"],"isCoaster":false,"parentRideID":10845,"imageName":"spider-man-web-adventure"},
-  {"parkID":4,"rideID":3,"name":"Pirates of the Caribbean","simpleCategories":["chillRide","family"],"officialTags":["Family Adventure"],"isCoaster":false,"imageName":"pirates-of-the-caribbean"},
-  {"parkID":4,"rideID":22,"name":"Peter Pan's Flight","simpleCategories":["chillRide","family"],"officialTags":["Family Adventure","Fun For Little Ones"],"isCoaster":false,"imageName":"peter-pans-flight"},
-  {"parkID":4,"rideID":19,"name":"\"it's a small world\"","simpleCategories":["chillRide","family"],"officialTags":["Fun For Little Ones","Family Adventure"],"isCoaster":false,"imageName":"its-a-small-world"},
-  {"parkID":4,"rideID":4,"name":"Autopia, presented by Avis","simpleCategories":["chillRide","family"],"officialTags":["Family Adventure"],"isCoaster":false,"imageName":"autopia"},
-  {"parkID":4,"rideID":5,"name":"Buzz Lightyear Laser Blast","simpleCategories":["family"],"officialTags":["Family Adventure"],"isCoaster":false,"imageName":"buzz-lightyear-laser-blast"},
-  {"parkID":4,"rideID":9,"name":"Star Tours: The Adventures Continue*","simpleCategories":["family","bigThrills"],"officialTags":["Family Adventure","Star Wars"],"isCoaster":false,"imageName":"star-tours-the-adventures-continue"},
-  {"parkID":4,"rideID":26,"name":"Phantom Manor","simpleCategories":["chillRide","family"],"officialTags":["Family Adventure"],"isCoaster":false,"imageName":"phantom-manor"},
-  {"parkID":28,"rideID":37,"name":"Ratatouille : L’Aventure Totalement Toquée de Rémy​","simpleCategories":["family","chillRide"],"officialTags":["Family Adventure"],"isCoaster":false,"imageName":"ratatouille-the-adventure"},
-  {"parkID":28,"rideID":7279,"name":"Ratatouille: The Adventure Single Rider","simpleCategories":["family","chillRide","singleRider"],"officialTags":["Family Adventure","Single Rider"],"isCoaster":false,"parentRideID":37,"imageName":"ratatouille-the-adventure"},
-  {"parkID":28,"rideID":15413,"name":"Frozen Ever After","simpleCategories":["family","chillRide"],"officialTags":["Family Adventure","Fun For Little Ones"],"isCoaster":false,"imageName":"frozen-ever-after"},
-  {"parkID":28,"rideID":15415,"name":"Raiponce Tangled Spin","simpleCategories":["family","chillRide"],"officialTags":["Fun For Little Ones"],"isCoaster":false,"imageName":"raiponce-tangled-spin"},
-  {"parkID":28,"rideID":31,"name":"Cars Quatre Roues Rallye","simpleCategories":["family","chillRide"],"officialTags":["Fun For Little Ones"],"isCoaster":false,"imageName":"cars-quatre-roues-rallye"},
-  {"parkID":28,"rideID":29,"name":"Cars ROAD TRIP","simpleCategories":["family","chillRide"],"officialTags":["Family Adventure"],"isCoaster":false,"imageName":"cars-road-trip"},
-  {"parkID":28,"rideID":33,"name":"Les Tapis Volants - Flying Carpets Over Agrabah®","simpleCategories":["family","chillRide"],"officialTags":["Fun For Little Ones"],"isCoaster":false,"imageName":"flying-carpets-over-agrabah"},
-  {"parkID":28,"rideID":36,"name":"Slinky® Dog Zigzag Spin","simpleCategories":["family","chillRide"],"officialTags":["Fun For Little Ones"],"isCoaster":false,"imageName":"slinky-dog-zigzag-spin"},
-  {"parkID":28,"rideID":35,"name":"Toy Soldiers Parachute Drop","simpleCategories":["family","bigThrills"],"officialTags":["Family Adventure"],"isCoaster":false,"imageName":"toy-soldiers-parachute-drop"},
-  {"parkID":28,"rideID":7281,"name":"Toy Soldiers Parachute Drop Single Rider","simpleCategories":["family","bigThrills","singleRider"],"officialTags":["Family Adventure","Single Rider"],"isCoaster":false,"parentRideID":35,"imageName":"toy-soldiers-parachute-drop"},
-  {"parkID":4,"rideID":2702,"name":"Adventure Isle","simpleCategories":["walkthrough","family"],"officialTags":["Relaxing Walks","Family Adventure"],"isCoaster":false,"imageName":"adventure-isle"},
-  {"parkID":4,"rideID":1,"name":"La Cabane des Robinson","simpleCategories":["walkthrough","family"],"officialTags":["Relaxing Walks","Family Adventure"],"isCoaster":false,"imageName":"la-cabane-des-robinson"},
-  {"parkID":4,"rideID":2703,"name":"Le Passage Enchanté d'Aladdin","simpleCategories":["walkthrough","family"],"officialTags":["Relaxing Walks"],"isCoaster":false,"imageName":"le-passage-enchante-daladdin"},
-  {"parkID":4,"rideID":2705,"name":"Pirate Galleon","simpleCategories":["walkthrough","family"],"officialTags":["Relaxing Walks"],"isCoaster":false,"imageName":"pirate-galleon"},
-  {"parkID":4,"rideID":2704,"name":"Pirates' Beach","simpleCategories":["walkthrough","family"],"officialTags":["Fun For Little Ones"],"isCoaster":false,"imageName":"pirates-beach"},
-  {"parkID":4,"rideID":6,"name":"Les Mystères du Nautilus","simpleCategories":["walkthrough","family"],"officialTags":["Relaxing Walks"],"isCoaster":false,"imageName":"les-mysteres-du-nautilus"},
-  {"parkID":4,"rideID":2707,"name":"Mickey’s PhilharMagic","simpleCategories":["showsMeetups","chillRide","family"],"officialTags":["Family Adventure","Shows"],"isCoaster":false,"imageName":"mickeys-philharmagic"},
-  {"parkID":4,"rideID":4573,"name":"Welcome to Starport: A Star Wars Encounter","simpleCategories":["showsMeetups","family"],"officialTags":["Character Encounters","Star Wars"],"isCoaster":false,"imageName":"welcome-to-starport"},
-  {"parkID":4,"rideID":13,"name":"Meet Mickey Mouse","simpleCategories":["showsMeetups","family"],"officialTags":["Character Encounters"],"isCoaster":false,"imageName":"meet-mickey-mouse"},
-  {"parkID":4,"rideID":24,"name":"Princess Pavilion","simpleCategories":["showsMeetups","family"],"officialTags":["Character Encounters"],"isCoaster":false,"imageName":"princess-pavilion"},
-  {"parkID":4,"rideID":14,"name":"Alice's Curious Labyrinth","simpleCategories":["walkthrough","family"],"officialTags":["Family Adventure"],"isCoaster":false,"imageName":"alices-curious-labyrinth"},
-  {"parkID":4,"rideID":15,"name":"Blanche-Neige et les Sept Nains®","simpleCategories":["chillRide","family"],"officialTags":["Family Adventure"],"isCoaster":false,"imageName":"blanche-neige-et-les-sept-nains"},
-  {"parkID":4,"rideID":17,"name":"Casey Jr. – le Petit Train du Cirque","simpleCategories":["family","chillRide"],"officialTags":["Fun For Little Ones"],"isCoaster":false,"imageName":"casey-jr-le-petit-train-du-cirque"},
-  {"parkID":4,"rideID":18,"name":"Dumbo the Flying Elephant","simpleCategories":["family","chillRide"],"officialTags":["Fun For Little Ones"],"isCoaster":false,"imageName":"dumbo-the-flying-elephant"},
-  {"parkID":4,"rideID":2710,"name":"La Tanière du Dragon","simpleCategories":["walkthrough","family"],"officialTags":["Relaxing Walks"],"isCoaster":false,"imageName":"la-taniere-du-dragon"},
-  {"parkID":4,"rideID":16,"name":"Le Carrousel de Lancelot","simpleCategories":["family","chillRide"],"officialTags":["Fun For Little Ones"],"isCoaster":false,"imageName":"le-carrousel-de-lancelot"},
-  {"parkID":4,"rideID":21,"name":"Le Pays des Contes de Fées, presented by Vittel","simpleCategories":["family","chillRide"],"officialTags":["Fun For Little Ones"],"isCoaster":false,"imageName":"le-pays-des-contes-de-fees"},
-  {"parkID":4,"rideID":23,"name":"Les Voyages de Pinocchio","simpleCategories":["family","chillRide"],"officialTags":["Family Adventure"],"isCoaster":false,"imageName":"les-voyages-de-pinocchio"},
-  {"parkID":4,"rideID":20,"name":"Mad Hatter's Tea Cups","simpleCategories":["family","chillRide"],"officialTags":["Fun For Little Ones"],"isCoaster":false,"imageName":"mad-hatters-tea-cups"},
-  {"parkID":4,"rideID":7,"name":"Orbitron®","simpleCategories":["family","chillRide"],"officialTags":["Family Adventure"],"isCoaster":false,"imageName":"orbitron"},
-  {"parkID":4,"rideID":12,"name":"Main Street Vehicles","simpleCategories":["chillRide","family"],"officialTags":["Relaxing Walks"],"isCoaster":false,"imageName":"main-street-vehicles"},
-  {"parkID":4,"rideID":27,"name":"River Rogue Keelboats","simpleCategories":["chillRide","family"],"officialTags":["Relaxing Walks"],"isCoaster":false,"imageName":"river-rogue-keelboats"},
-  {"parkID":4,"rideID":28,"name":"Thunder Mesa Riverboat Landing","simpleCategories":["chillRide","family"],"officialTags":["Relaxing Walks"],"isCoaster":false,"imageName":"thunder-mesa-riverboat-landing"},
-  {"parkID":4,"rideID":2708,"name":"Disneyland Railroad Main Street Station","simpleCategories":["chillRide","family"],"officialTags":["Relaxing Rides"],"isCoaster":false,"imageName":"disneyland-railroad"},
-  {"parkID":4,"rideID":2706,"name":"Disneyland Railroad Discoveryland Station","simpleCategories":["chillRide","family"],"officialTags":["Relaxing Rides"],"isCoaster":false,"imageName":"disneyland-railroad"},
-  {"parkID":4,"rideID":2711,"name":"Disneyland Railroad Fantasyland Station","simpleCategories":["chillRide","family"],"officialTags":["Relaxing Rides"],"isCoaster":false,"imageName":"disneyland-railroad"},
-  {"parkID":4,"rideID":11,"name":"Disneyland Railroad Main Street Station","simpleCategories":["chillRide","family"],"officialTags":["Relaxing Rides"],"isCoaster":false,"imageName":"disneyland-railroad"},
-  {"parkID":4,"rideID":2714,"name":"Disneyland Railroad Frontierland Depot","simpleCategories":["chillRide","family"],"officialTags":["Relaxing Rides"],"isCoaster":false,"imageName":"disneyland-railroad"},
-  {"parkID":4,"rideID":2713,"name":"Frontierland Playground","simpleCategories":["walkthrough","family"],"officialTags":["Fun For Little Ones"],"isCoaster":false,"imageName":"frontierland-playground"},
-  {"parkID":4,"rideID":2712,"name":"Rustler Roundup Shootin' Gallery","simpleCategories":["family"],"officialTags":["Family Adventure"],"isCoaster":false,"imageName":"rustler-roundup-shootin-gallery"},
-  {"parkID":28,"rideID":16247,"name":"Entry to World of Frozen","simpleCategories":["walkthrough","family"],"officialTags":["World of Frozen"],"isCoaster":false,"imageName":"world-of-frozen"}
+  {
+    "parkID": 4,
+    "rideID": 25,
+    "name": "Big Thunder Mountain",
+    "simpleCategories": [
+      "coasters",
+      "bigThrills",
+      "family"
+    ],
+    "officialTags": [
+      "Big Thrills",
+      "Family Adventure"
+    ],
+    "isCoaster": true,
+    "imageName": "big-thunder-mountain",
+    "imageFileName": "big-thunder-mountain.jpg"
+  },
+  {
+    "parkID": 4,
+    "rideID": 8,
+    "name": "Star Wars Hyperspace Mountain",
+    "simpleCategories": [
+      "coasters",
+      "bigThrills"
+    ],
+    "officialTags": [
+      "Big Thrills",
+      "Star Wars"
+    ],
+    "isCoaster": true,
+    "imageName": "star-wars-hyperspace-mountain",
+    "imageFileName": "star-wars-hyperspace-mountain.jpg"
+  },
+  {
+    "parkID": 4,
+    "rideID": 7278,
+    "name": "Star Wars Hyperspace Mountain Single Rider",
+    "simpleCategories": [
+      "coasters",
+      "bigThrills",
+      "singleRider"
+    ],
+    "officialTags": [
+      "Big Thrills",
+      "Single Rider"
+    ],
+    "isCoaster": true,
+    "parentRideID": 8,
+    "imageName": "star-wars-hyperspace-mountain",
+    "imageFileName": "star-wars-hyperspace-mountain.jpg"
+  },
+  {
+    "parkID": 4,
+    "rideID": 2,
+    "name": "Indiana Jones™ and the Temple of Peril",
+    "simpleCategories": [
+      "coasters",
+      "bigThrills"
+    ],
+    "officialTags": [
+      "Big Thrills"
+    ],
+    "isCoaster": true,
+    "imageName": "indiana-jones-and-the-temple-of-peril",
+    "imageFileName": "indiana-jones-and-the-temple-of-peril.jpg"
+  },
+  {
+    "parkID": 4,
+    "rideID": 7306,
+    "name": "Indiana Jones and the Temple of Peril Single Rider",
+    "simpleCategories": [
+      "coasters",
+      "bigThrills",
+      "singleRider"
+    ],
+    "officialTags": [
+      "Big Thrills",
+      "Single Rider"
+    ],
+    "isCoaster": true,
+    "parentRideID": 2,
+    "imageName": "indiana-jones-and-the-temple-of-peril",
+    "imageFileName": "indiana-jones-and-the-temple-of-peril.jpg"
+  },
+  {
+    "parkID": 28,
+    "rideID": 32,
+    "name": "Crush's Coaster",
+    "simpleCategories": [
+      "coasters",
+      "bigThrills",
+      "family"
+    ],
+    "officialTags": [
+      "Big Thrills",
+      "Family Adventure"
+    ],
+    "isCoaster": true,
+    "imageName": "crushs-coaster",
+    "imageFileName": "crushs-coaster.jpg"
+  },
+  {
+    "parkID": 28,
+    "rideID": 7277,
+    "name": "Crush's Coaster Single Rider",
+    "simpleCategories": [
+      "coasters",
+      "bigThrills",
+      "singleRider"
+    ],
+    "officialTags": [
+      "Big Thrills",
+      "Single Rider"
+    ],
+    "isCoaster": true,
+    "parentRideID": 32,
+    "imageName": "crushs-coaster",
+    "imageFileName": "crushs-coaster.jpg"
+  },
+  {
+    "parkID": 28,
+    "rideID": 10848,
+    "name": "Avengers Assemble: Flight Force",
+    "simpleCategories": [
+      "coasters",
+      "bigThrills"
+    ],
+    "officialTags": [
+      "Big Thrills",
+      "Marvel"
+    ],
+    "isCoaster": true,
+    "imageName": "avengers-assemble-flight-force",
+    "imageFileName": "avengers-assemble-flight-force.jpg"
+  },
+  {
+    "parkID": 28,
+    "rideID": 10849,
+    "name": "Avengers Assemble: Flight Force Single Rider",
+    "simpleCategories": [
+      "coasters",
+      "bigThrills",
+      "singleRider"
+    ],
+    "officialTags": [
+      "Big Thrills",
+      "Single Rider",
+      "Marvel"
+    ],
+    "isCoaster": true,
+    "parentRideID": 10848,
+    "imageName": "avengers-assemble-flight-force",
+    "imageFileName": "avengers-assemble-flight-force.jpg"
+  },
+  {
+    "parkID": 28,
+    "rideID": 34,
+    "name": "RC Racer",
+    "simpleCategories": [
+      "bigThrills",
+      "family"
+    ],
+    "officialTags": [
+      "Big Thrills",
+      "Family Adventure"
+    ],
+    "isCoaster": false,
+    "imageName": "rc-racer",
+    "imageFileName": "rc-racer.jpg"
+  },
+  {
+    "parkID": 28,
+    "rideID": 7280,
+    "name": "RC Racer Single Rider",
+    "simpleCategories": [
+      "bigThrills",
+      "singleRider"
+    ],
+    "officialTags": [
+      "Big Thrills",
+      "Single Rider"
+    ],
+    "isCoaster": false,
+    "parentRideID": 34,
+    "imageName": "rc-racer",
+    "imageFileName": "rc-racer.jpg"
+  },
+  {
+    "parkID": 28,
+    "rideID": 40,
+    "name": "The Twilight Zone Tower of Terror",
+    "simpleCategories": [
+      "bigThrills"
+    ],
+    "officialTags": [
+      "Big Thrills"
+    ],
+    "isCoaster": false,
+    "imageName": "the-twilight-zone-tower-of-terror",
+    "imageFileName": "the-twilight-zone-tower-of-terror.jpg"
+  },
+  {
+    "parkID": 28,
+    "rideID": 10845,
+    "name": "Spider-Man W.E.B. Adventure",
+    "simpleCategories": [
+      "family"
+    ],
+    "officialTags": [
+      "Family Adventure",
+      "Marvel"
+    ],
+    "isCoaster": false,
+    "imageName": "spider-man-web-adventure",
+    "imageFileName": "spider-man-web-adventure.jpg"
+  },
+  {
+    "parkID": 28,
+    "rideID": 10846,
+    "name": "Spider-Man W.E.B. Adventure Single Rider",
+    "simpleCategories": [
+      "family",
+      "singleRider"
+    ],
+    "officialTags": [
+      "Family Adventure",
+      "Single Rider",
+      "Marvel"
+    ],
+    "isCoaster": false,
+    "parentRideID": 10845,
+    "imageName": "spider-man-web-adventure",
+    "imageFileName": "spider-man-web-adventure.jpg"
+  },
+  {
+    "parkID": 4,
+    "rideID": 3,
+    "name": "Pirates of the Caribbean",
+    "simpleCategories": [
+      "chillRide",
+      "family"
+    ],
+    "officialTags": [
+      "Family Adventure"
+    ],
+    "isCoaster": false,
+    "imageName": "pirates-of-the-caribbean",
+    "imageFileName": "pirates-of-the-caribbean.jpg"
+  },
+  {
+    "parkID": 4,
+    "rideID": 22,
+    "name": "Peter Pan's Flight",
+    "simpleCategories": [
+      "chillRide",
+      "family"
+    ],
+    "officialTags": [
+      "Family Adventure",
+      "Fun For Little Ones"
+    ],
+    "isCoaster": false,
+    "imageName": "peter-pans-flight",
+    "imageFileName": "peter-pans-flight.jpg"
+  },
+  {
+    "parkID": 4,
+    "rideID": 19,
+    "name": "\"it's a small world\"",
+    "simpleCategories": [
+      "chillRide",
+      "family"
+    ],
+    "officialTags": [
+      "Fun For Little Ones",
+      "Family Adventure"
+    ],
+    "isCoaster": false,
+    "imageName": "its-a-small-world",
+    "imageFileName": "its-a-small-world.jpg"
+  },
+  {
+    "parkID": 4,
+    "rideID": 4,
+    "name": "Autopia, presented by Avis",
+    "simpleCategories": [
+      "chillRide",
+      "family"
+    ],
+    "officialTags": [
+      "Family Adventure"
+    ],
+    "isCoaster": false,
+    "imageName": "autopia",
+    "imageFileName": "autopia.jpg"
+  },
+  {
+    "parkID": 4,
+    "rideID": 5,
+    "name": "Buzz Lightyear Laser Blast",
+    "simpleCategories": [
+      "family"
+    ],
+    "officialTags": [
+      "Family Adventure"
+    ],
+    "isCoaster": false,
+    "imageName": "buzz-lightyear-laser-blast",
+    "imageFileName": "buzz-lightyear-laser-blast.jpg"
+  },
+  {
+    "parkID": 4,
+    "rideID": 9,
+    "name": "Star Tours: The Adventures Continue*",
+    "simpleCategories": [
+      "family",
+      "bigThrills"
+    ],
+    "officialTags": [
+      "Family Adventure",
+      "Star Wars"
+    ],
+    "isCoaster": false,
+    "imageName": "star-tours-the-adventures-continue",
+    "imageFileName": "star-tours-the-adventures-continue.jpg"
+  },
+  {
+    "parkID": 4,
+    "rideID": 26,
+    "name": "Phantom Manor",
+    "simpleCategories": [
+      "chillRide",
+      "family"
+    ],
+    "officialTags": [
+      "Family Adventure"
+    ],
+    "isCoaster": false,
+    "imageName": "phantom-manor",
+    "imageFileName": "phantom-manor.jpg"
+  },
+  {
+    "parkID": 28,
+    "rideID": 37,
+    "name": "Ratatouille : L’Aventure Totalement Toquée de Rémy​",
+    "simpleCategories": [
+      "family",
+      "chillRide"
+    ],
+    "officialTags": [
+      "Family Adventure"
+    ],
+    "isCoaster": false,
+    "imageName": "ratatouille-the-adventure",
+    "imageFileName": "ratatouille-the-adventure.jpg"
+  },
+  {
+    "parkID": 28,
+    "rideID": 7279,
+    "name": "Ratatouille: The Adventure Single Rider",
+    "simpleCategories": [
+      "family",
+      "chillRide",
+      "singleRider"
+    ],
+    "officialTags": [
+      "Family Adventure",
+      "Single Rider"
+    ],
+    "isCoaster": false,
+    "parentRideID": 37,
+    "imageName": "ratatouille-the-adventure",
+    "imageFileName": "ratatouille-the-adventure.jpg"
+  },
+  {
+    "parkID": 28,
+    "rideID": 15413,
+    "name": "Frozen Ever After",
+    "simpleCategories": [
+      "family",
+      "chillRide"
+    ],
+    "officialTags": [
+      "Family Adventure",
+      "Fun For Little Ones"
+    ],
+    "isCoaster": false,
+    "imageName": "frozen-ever-after",
+    "imageFileName": "frozen-ever-after.jpg"
+  },
+  {
+    "parkID": 28,
+    "rideID": 15415,
+    "name": "Raiponce Tangled Spin",
+    "simpleCategories": [
+      "family",
+      "chillRide"
+    ],
+    "officialTags": [
+      "Fun For Little Ones"
+    ],
+    "isCoaster": false,
+    "imageName": "raiponce-tangled-spin",
+    "imageFileName": "raiponce-tangled-spin.jpg"
+  },
+  {
+    "parkID": 28,
+    "rideID": 31,
+    "name": "Cars Quatre Roues Rallye",
+    "simpleCategories": [
+      "family",
+      "chillRide"
+    ],
+    "officialTags": [
+      "Fun For Little Ones"
+    ],
+    "isCoaster": false,
+    "imageName": "cars-quatre-roues-rallye",
+    "imageFileName": "cars-quatre-roues-rallye.jpg"
+  },
+  {
+    "parkID": 28,
+    "rideID": 29,
+    "name": "Cars ROAD TRIP",
+    "simpleCategories": [
+      "family",
+      "chillRide"
+    ],
+    "officialTags": [
+      "Family Adventure"
+    ],
+    "isCoaster": false,
+    "imageName": "cars-road-trip",
+    "imageFileName": "cars-road-trip.jpg"
+  },
+  {
+    "parkID": 28,
+    "rideID": 33,
+    "name": "Les Tapis Volants - Flying Carpets Over Agrabah®",
+    "simpleCategories": [
+      "family",
+      "chillRide"
+    ],
+    "officialTags": [
+      "Fun For Little Ones"
+    ],
+    "isCoaster": false,
+    "imageName": "flying-carpets-over-agrabah",
+    "imageFileName": "flying-carpets-over-agrabah.jpg"
+  },
+  {
+    "parkID": 28,
+    "rideID": 36,
+    "name": "Slinky® Dog Zigzag Spin",
+    "simpleCategories": [
+      "family",
+      "chillRide"
+    ],
+    "officialTags": [
+      "Fun For Little Ones"
+    ],
+    "isCoaster": false,
+    "imageName": "slinky-dog-zigzag-spin",
+    "imageFileName": "slinky-dog-zigzag-spin.jpg"
+  },
+  {
+    "parkID": 28,
+    "rideID": 35,
+    "name": "Toy Soldiers Parachute Drop",
+    "simpleCategories": [
+      "family",
+      "bigThrills"
+    ],
+    "officialTags": [
+      "Family Adventure"
+    ],
+    "isCoaster": false,
+    "imageName": "toy-soldiers-parachute-drop",
+    "imageFileName": "toy-soldiers-parachute-drop.jpg"
+  },
+  {
+    "parkID": 28,
+    "rideID": 7281,
+    "name": "Toy Soldiers Parachute Drop Single Rider",
+    "simpleCategories": [
+      "family",
+      "bigThrills",
+      "singleRider"
+    ],
+    "officialTags": [
+      "Family Adventure",
+      "Single Rider"
+    ],
+    "isCoaster": false,
+    "parentRideID": 35,
+    "imageName": "toy-soldiers-parachute-drop",
+    "imageFileName": "toy-soldiers-parachute-drop.jpg"
+  },
+  {
+    "parkID": 4,
+    "rideID": 2702,
+    "name": "Adventure Isle",
+    "simpleCategories": [
+      "walkthrough",
+      "family"
+    ],
+    "officialTags": [
+      "Relaxing Walks",
+      "Family Adventure"
+    ],
+    "isCoaster": false,
+    "imageName": "adventure-isle",
+    "imageFileName": "adventure-isle.jpg"
+  },
+  {
+    "parkID": 4,
+    "rideID": 1,
+    "name": "La Cabane des Robinson",
+    "simpleCategories": [
+      "walkthrough",
+      "family"
+    ],
+    "officialTags": [
+      "Relaxing Walks",
+      "Family Adventure"
+    ],
+    "isCoaster": false,
+    "imageName": "la-cabane-des-robinson",
+    "imageFileName": "la-cabane-des-robinson.jpg"
+  },
+  {
+    "parkID": 4,
+    "rideID": 2703,
+    "name": "Le Passage Enchanté d'Aladdin",
+    "simpleCategories": [
+      "walkthrough",
+      "family"
+    ],
+    "officialTags": [
+      "Relaxing Walks"
+    ],
+    "isCoaster": false,
+    "imageName": "le-passage-enchante-daladdin",
+    "imageFileName": "le-passage-enchante-daladdin.jpg"
+  },
+  {
+    "parkID": 4,
+    "rideID": 2705,
+    "name": "Pirate Galleon",
+    "simpleCategories": [
+      "walkthrough",
+      "family"
+    ],
+    "officialTags": [
+      "Relaxing Walks"
+    ],
+    "isCoaster": false,
+    "imageName": "pirate-galleon",
+    "imageFileName": "pirate-galleon.jpg"
+  },
+  {
+    "parkID": 4,
+    "rideID": 2704,
+    "name": "Pirates' Beach",
+    "simpleCategories": [
+      "walkthrough",
+      "family"
+    ],
+    "officialTags": [
+      "Fun For Little Ones"
+    ],
+    "isCoaster": false,
+    "imageName": "pirates-beach",
+    "imageFileName": "pirates-beach.jpg"
+  },
+  {
+    "parkID": 4,
+    "rideID": 6,
+    "name": "Les Mystères du Nautilus",
+    "simpleCategories": [
+      "walkthrough",
+      "family"
+    ],
+    "officialTags": [
+      "Relaxing Walks"
+    ],
+    "isCoaster": false,
+    "imageName": "les-mysteres-du-nautilus",
+    "imageFileName": "les-mysteres-du-nautilus.jpg"
+  },
+  {
+    "parkID": 4,
+    "rideID": 2707,
+    "name": "Mickey’s PhilharMagic",
+    "simpleCategories": [
+      "showsMeetups",
+      "chillRide",
+      "family"
+    ],
+    "officialTags": [
+      "Family Adventure",
+      "Shows"
+    ],
+    "isCoaster": false,
+    "imageName": "mickeys-philharmagic",
+    "imageFileName": "mickeys-philharmagic.jpg"
+  },
+  {
+    "parkID": 4,
+    "rideID": 4573,
+    "name": "Welcome to Starport: A Star Wars Encounter",
+    "simpleCategories": [
+      "showsMeetups",
+      "family"
+    ],
+    "officialTags": [
+      "Character Encounters",
+      "Star Wars"
+    ],
+    "isCoaster": false,
+    "imageName": "welcome-to-starport",
+    "imageFileName": "welcome-to-starport.jpg"
+  },
+  {
+    "parkID": 4,
+    "rideID": 13,
+    "name": "Meet Mickey Mouse",
+    "simpleCategories": [
+      "showsMeetups",
+      "family"
+    ],
+    "officialTags": [
+      "Character Encounters"
+    ],
+    "isCoaster": false,
+    "imageName": "meet-mickey-mouse",
+    "imageFileName": "meet-mickey-mouse.jpg"
+  },
+  {
+    "parkID": 4,
+    "rideID": 24,
+    "name": "Princess Pavilion",
+    "simpleCategories": [
+      "showsMeetups",
+      "family"
+    ],
+    "officialTags": [
+      "Character Encounters"
+    ],
+    "isCoaster": false,
+    "imageName": "princess-pavilion",
+    "imageFileName": "princess-pavilion.jpg"
+  },
+  {
+    "parkID": 4,
+    "rideID": 14,
+    "name": "Alice's Curious Labyrinth",
+    "simpleCategories": [
+      "walkthrough",
+      "family"
+    ],
+    "officialTags": [
+      "Family Adventure"
+    ],
+    "isCoaster": false,
+    "imageName": "alices-curious-labyrinth",
+    "imageFileName": "alices-curious-labyrinth.jpg"
+  },
+  {
+    "parkID": 4,
+    "rideID": 15,
+    "name": "Blanche-Neige et les Sept Nains®",
+    "simpleCategories": [
+      "chillRide",
+      "family"
+    ],
+    "officialTags": [
+      "Family Adventure"
+    ],
+    "isCoaster": false,
+    "imageName": "blanche-neige-et-les-sept-nains",
+    "imageFileName": "blanche-neige-et-les-sept-nains.jpg"
+  },
+  {
+    "parkID": 4,
+    "rideID": 17,
+    "name": "Casey Jr. – le Petit Train du Cirque",
+    "simpleCategories": [
+      "family",
+      "chillRide"
+    ],
+    "officialTags": [
+      "Fun For Little Ones"
+    ],
+    "isCoaster": false,
+    "imageName": "casey-jr-le-petit-train-du-cirque",
+    "imageFileName": "casey-jr-le-petit-train-du-cirque.jpg"
+  },
+  {
+    "parkID": 4,
+    "rideID": 18,
+    "name": "Dumbo the Flying Elephant",
+    "simpleCategories": [
+      "family",
+      "chillRide"
+    ],
+    "officialTags": [
+      "Fun For Little Ones"
+    ],
+    "isCoaster": false,
+    "imageName": "dumbo-the-flying-elephant",
+    "imageFileName": "dumbo-the-flying-elephant.png"
+  },
+  {
+    "parkID": 4,
+    "rideID": 2710,
+    "name": "La Tanière du Dragon",
+    "simpleCategories": [
+      "walkthrough",
+      "family"
+    ],
+    "officialTags": [
+      "Relaxing Walks"
+    ],
+    "isCoaster": false,
+    "imageName": "la-taniere-du-dragon",
+    "imageFileName": "la-taniere-du-dragon.jpg"
+  },
+  {
+    "parkID": 4,
+    "rideID": 16,
+    "name": "Le Carrousel de Lancelot",
+    "simpleCategories": [
+      "family",
+      "chillRide"
+    ],
+    "officialTags": [
+      "Fun For Little Ones"
+    ],
+    "isCoaster": false,
+    "imageName": "le-carrousel-de-lancelot",
+    "imageFileName": "le-carrousel-de-lancelot.jpg"
+  },
+  {
+    "parkID": 4,
+    "rideID": 21,
+    "name": "Le Pays des Contes de Fées, presented by Vittel",
+    "simpleCategories": [
+      "family",
+      "chillRide"
+    ],
+    "officialTags": [
+      "Fun For Little Ones"
+    ],
+    "isCoaster": false,
+    "imageName": "le-pays-des-contes-de-fees",
+    "imageFileName": "le-pays-des-contes-de-fees.jpg"
+  },
+  {
+    "parkID": 4,
+    "rideID": 23,
+    "name": "Les Voyages de Pinocchio",
+    "simpleCategories": [
+      "family",
+      "chillRide"
+    ],
+    "officialTags": [
+      "Family Adventure"
+    ],
+    "isCoaster": false,
+    "imageName": "les-voyages-de-pinocchio",
+    "imageFileName": "les-voyages-de-pinocchio.jpg"
+  },
+  {
+    "parkID": 4,
+    "rideID": 20,
+    "name": "Mad Hatter's Tea Cups",
+    "simpleCategories": [
+      "family",
+      "chillRide"
+    ],
+    "officialTags": [
+      "Fun For Little Ones"
+    ],
+    "isCoaster": false,
+    "imageName": "mad-hatters-tea-cups",
+    "imageFileName": "mad-hatters-tea-cups.jpg"
+  },
+  {
+    "parkID": 4,
+    "rideID": 7,
+    "name": "Orbitron®",
+    "simpleCategories": [
+      "family",
+      "chillRide"
+    ],
+    "officialTags": [
+      "Family Adventure"
+    ],
+    "isCoaster": false,
+    "imageName": "orbitron",
+    "imageFileName": "orbitron.jpg"
+  },
+  {
+    "parkID": 4,
+    "rideID": 12,
+    "name": "Main Street Vehicles",
+    "simpleCategories": [
+      "chillRide",
+      "family"
+    ],
+    "officialTags": [
+      "Relaxing Walks"
+    ],
+    "isCoaster": false,
+    "imageName": "main-street-vehicles",
+    "imageFileName": "main-street-vehicles.jpg"
+  },
+  {
+    "parkID": 4,
+    "rideID": 27,
+    "name": "River Rogue Keelboats",
+    "simpleCategories": [
+      "chillRide",
+      "family"
+    ],
+    "officialTags": [
+      "Relaxing Walks"
+    ],
+    "isCoaster": false,
+    "imageName": "river-rogue-keelboats",
+    "imageFileName": "river-rogue-keelboats.jpg"
+  },
+  {
+    "parkID": 4,
+    "rideID": 28,
+    "name": "Thunder Mesa Riverboat Landing",
+    "simpleCategories": [
+      "chillRide",
+      "family"
+    ],
+    "officialTags": [
+      "Relaxing Walks"
+    ],
+    "isCoaster": false,
+    "imageName": "thunder-mesa-riverboat-landing",
+    "imageFileName": "thunder-mesa-riverboat-landing.jpg"
+  },
+  {
+    "parkID": 4,
+    "rideID": 2708,
+    "name": "Disneyland Railroad Main Street Station",
+    "simpleCategories": [
+      "chillRide",
+      "family"
+    ],
+    "officialTags": [
+      "Relaxing Rides"
+    ],
+    "isCoaster": false,
+    "imageName": "disneyland-railroad",
+    "imageFileName": "disneyland-railroad.jpg"
+  },
+  {
+    "parkID": 4,
+    "rideID": 2706,
+    "name": "Disneyland Railroad Discoveryland Station",
+    "simpleCategories": [
+      "chillRide",
+      "family"
+    ],
+    "officialTags": [
+      "Relaxing Rides"
+    ],
+    "isCoaster": false,
+    "imageName": "disneyland-railroad",
+    "imageFileName": "disneyland-railroad.jpg"
+  },
+  {
+    "parkID": 4,
+    "rideID": 2711,
+    "name": "Disneyland Railroad Fantasyland Station",
+    "simpleCategories": [
+      "chillRide",
+      "family"
+    ],
+    "officialTags": [
+      "Relaxing Rides"
+    ],
+    "isCoaster": false,
+    "imageName": "disneyland-railroad",
+    "imageFileName": "disneyland-railroad.jpg"
+  },
+  {
+    "parkID": 4,
+    "rideID": 11,
+    "name": "Disneyland Railroad Main Street Station",
+    "simpleCategories": [
+      "chillRide",
+      "family"
+    ],
+    "officialTags": [
+      "Relaxing Rides"
+    ],
+    "isCoaster": false,
+    "imageName": "disneyland-railroad",
+    "imageFileName": "disneyland-railroad.jpg"
+  },
+  {
+    "parkID": 4,
+    "rideID": 2714,
+    "name": "Disneyland Railroad Frontierland Depot",
+    "simpleCategories": [
+      "chillRide",
+      "family"
+    ],
+    "officialTags": [
+      "Relaxing Rides"
+    ],
+    "isCoaster": false,
+    "imageName": "disneyland-railroad",
+    "imageFileName": "disneyland-railroad.jpg"
+  },
+  {
+    "parkID": 4,
+    "rideID": 2713,
+    "name": "Frontierland Playground",
+    "simpleCategories": [
+      "walkthrough",
+      "family"
+    ],
+    "officialTags": [
+      "Fun For Little Ones"
+    ],
+    "isCoaster": false,
+    "imageName": "frontierland-playground",
+    "imageFileName": "frontierland-playground.jpg"
+  },
+  {
+    "parkID": 4,
+    "rideID": 2712,
+    "name": "Rustler Roundup Shootin' Gallery",
+    "simpleCategories": [
+      "family"
+    ],
+    "officialTags": [
+      "Family Adventure"
+    ],
+    "isCoaster": false,
+    "imageName": "rustler-roundup-shootin-gallery",
+    "imageFileName": "rustler-roundup-shootin-gallery.jpg"
+  },
+  {
+    "parkID": 28,
+    "rideID": 16247,
+    "name": "Entry to World of Frozen",
+    "simpleCategories": [
+      "walkthrough",
+      "family"
+    ],
+    "officialTags": [
+      "World of Frozen"
+    ],
+    "isCoaster": false,
+    "imageName": "world-of-frozen",
+    "imageFileName": "world-of-frozen.jpg"
+  }
 ]

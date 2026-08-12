@@ -2,7 +2,8 @@ import Foundation
 
 struct QueueAPI {
     func fetchAttractions(for park: Park) async throws -> [Attraction] {
-        let (data, response) = try await URLSession.shared.data(from: park.apiURL)
+        let request = URLRequest(url: park.apiURL, timeoutInterval: 20)
+        let (data, response) = try await URLSession.shared.data(for: request)
 
         guard let httpResponse = response as? HTTPURLResponse,
               (200...299).contains(httpResponse.statusCode) else {
