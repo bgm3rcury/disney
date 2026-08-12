@@ -5,6 +5,7 @@ struct QueueListView: View {
 
     @EnvironmentObject private var store: QueueStore
     @State private var sortMode: SortMode = .openThenShortest
+    @State private var selectedCategory: AttractionCategory = .all
     @State private var favoritesOnly = false
     @State private var now = Date()
 
@@ -34,7 +35,20 @@ struct QueueListView: View {
                         }
                     }
 
+                    Picker("Category", selection: $selectedCategory) {
+                        ForEach(AttractionCategory.allCases) { category in
+                            Text(category.title).tag(category)
+                        }
+                    }
+
                     Toggle("Favorites only", isOn: $favoritesOnly)
+
+                    Toggle("Notify favorite coasters below busy", isOn: Binding(
+                        get: { store.notificationsEnabled },
+                        set: { enabled in
+                            store.setNotificationsEnabled(enabled)
+                        }
+                    ))
                 }
 
                 Section {
@@ -70,7 +84,7 @@ struct QueueListView: View {
     private var filteredAttractions: [Attraction] {
         store.attractions(for: selection)
             .filter { attraction in
-                !favoritesOnly || store.isFavorite(attraction)
+                (!favoritesOnly || store.isFavorite(attraction)) && attraction.matches(category: selectedCategory)
             }
             .sorted(using: sortMode)
     }
@@ -88,7 +102,7 @@ private struct EmptyQueueView: View {
             Text(favoritesOnly ? "No Favorites" : "No Queue Data")
                 .font(.headline)
 
-            Text(favoritesOnly ? "Tap the star on an attraction to save it here." : "Pull to refresh or try again in a moment.")
+            Text(favoritesOnly ? "Tap the star on an attraction to save it here." : "Pull to refresh or change the filters.")
                 .font(.caption)
                 .foregroundStyle(.secondary)
                 .multilineTextAlignment(.center)
@@ -97,6 +111,7 @@ private struct EmptyQueueView: View {
         .padding(.vertical, 24)
     }
 }
+
 enum SortMode: String, CaseIterable, Identifiable {
     case openThenShortest
     case longest

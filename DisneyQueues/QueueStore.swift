@@ -10,14 +10,18 @@ final class QueueStore: ObservableObject {
     @Published private(set) var isLoading = false
     @Published private(set) var errorMessage: String?
     @Published private(set) var favorites: Set<String> = []
+    @Published private(set) var notificationsEnabled = false
 
     private let api: QueueAPI
+    private let notificationService: QueueNotificationService
     private var refreshTask: Task<Void, Never>?
     private let favoritesKey = "favoriteAttractions"
 
-    init(api: QueueAPI = QueueAPI()) {
+    init(api: QueueAPI = QueueAPI(), notificationService: QueueNotificationService = QueueNotificationService()) {
         self.api = api
+        self.notificationService = notificationService
         self.favorites = Set(UserDefaults.standard.stringArray(forKey: favoritesKey) ?? [])
+        self.notificationsEnabled = notificationService.notificationsEnabled
     }
 
     deinit {
@@ -52,6 +56,7 @@ final class QueueStore: ObservableObject {
             attractionsByPark[.adventureWorld] = try await adventureWorld
             lastRefresh = Date()
             nextRefresh = Date().addingTimeInterval(Self.refreshInterval)
+            await notificationService.evaluate(attractions: allAttractions, favorites: favorites)
         } catch {
             errorMessage = "Could not refresh queue times. Showing the latest available data."
             nextRefresh = Date().addingTimeInterval(60)
@@ -65,7 +70,7 @@ final class QueueStore: ObservableObject {
         case .single(let park):
             return attractionsByPark[park, default: []]
         case .all:
-            return Park.allCases.flatMap { attractionsByPark[$0, default: []] }
+            return allAttractions
         }
     }
 
@@ -81,6 +86,25 @@ final class QueueStore: ObservableObject {
         }
 
         UserDefaults.standard.set(Array(favorites).sorted(), forKey: favoritesKey)
+        Task {
+            await notificationService.evaluate(attractions: allAttractions, favorites: favorites)
+        }
+    }
+
+    func setNotificationsEnabled(_ enabled: Bool) {
+        notificationService.notificationsEnabled = enabled
+        notificationsEnabled = enabled
+
+        if enabled {
+            Task {
+                await notificationService.requestAuthorizationIfNeeded()
+                await notificationService.evaluate(attractions: allAttractions, favorites: favorites)
+            }
+        }
+    }
+
+    private var allAttractions: [Attraction] {
+        Park.allCases.flatMap { attractionsByPark[$0, default: []] }
     }
 }
 

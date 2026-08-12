@@ -14,6 +14,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Generate bundled assets
+        run: |
+          python3 -m pip install --user pillow
+          python3 Scripts/generate_assets.py
+
       - name: Build unsigned app
         run: |
           xcodebuild archive \

@@ -17,6 +17,10 @@
 		000000000000000000000008 /* RefreshHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000108 /* RefreshHeaderView.swift */; };
 		000000000000000000000009 /* AttractionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000109 /* AttractionRow.swift */; };
 		00000000000000000000000A /* DisneyQueuesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000201 /* DisneyQueuesTests.swift */; };
+		00000000000000000000000B /* AttractionMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000010B /* AttractionMetadata.swift */; };
+		00000000000000000000000C /* QueueNotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000010C /* QueueNotificationService.swift */; };
+		00000000000000000000000D /* AttractionMetadata.json in Resources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000010D /* AttractionMetadata.json */; };
+		00000000000000000000000E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000010E /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,10 @@
 		000000000000000000000108 /* RefreshHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshHeaderView.swift; sourceTree = "<group>"; };
 		000000000000000000000109 /* AttractionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionRow.swift; sourceTree = "<group>"; };
 		00000000000000000000010A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00000000000000000000010B /* AttractionMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionMetadata.swift; sourceTree = "<group>"; };
+		00000000000000000000010C /* QueueNotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueNotificationService.swift; sourceTree = "<group>"; };
+		00000000000000000000010D /* AttractionMetadata.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AttractionMetadata.json; sourceTree = "<group>"; };
+		00000000000000000000010E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		000000000000000000000201 /* DisneyQueuesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisneyQueuesTests.swift; sourceTree = "<group>"; };
 		000000000000000000000601 /* DisneyQueues.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DisneyQueues.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		000000000000000000000602 /* DisneyQueuesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DisneyQueuesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +93,10 @@
 				000000000000000000000108 /* RefreshHeaderView.swift */,
 				000000000000000000000109 /* AttractionRow.swift */,
 				00000000000000000000010A /* Info.plist */,
+				00000000000000000000010B /* AttractionMetadata.swift */,
+				00000000000000000000010C /* QueueNotificationService.swift */,
+				00000000000000000000010D /* AttractionMetadata.json */,
+				00000000000000000000010E /* Assets.xcassets */,
 			);
 			path = DisneyQueues;
 			sourceTree = "<group>";
@@ -187,6 +199,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00000000000000000000000D /* AttractionMetadata.json in Resources */,
+				00000000000000000000000E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +227,8 @@
 				000000000000000000000007 /* QueueListView.swift in Sources */,
 				000000000000000000000008 /* RefreshHeaderView.swift in Sources */,
 				000000000000000000000009 /* AttractionRow.swift in Sources */,
+				00000000000000000000000B /* AttractionMetadata.swift in Sources */,
+				00000000000000000000000C /* QueueNotificationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +370,8 @@
 		000000000000000000000D01 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+
 				CODE_SIGN_STYLE = Automatic;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = DisneyQueues/Info.plist;
@@ -373,6 +391,8 @@
 		000000000000000000000D02 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+
 				CODE_SIGN_STYLE = Automatic;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = DisneyQueues/Info.plist;
