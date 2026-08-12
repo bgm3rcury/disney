@@ -200,7 +200,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				00000000000000000000000D /* AttractionMetadata.json in Resources */,
-				00000000000000000000000E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,8 +369,6 @@
 		000000000000000000000D01 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-
 				CODE_SIGN_STYLE = Automatic;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = DisneyQueues/Info.plist;
@@ -391,8 +388,6 @@
 		000000000000000000000D02 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-
 				CODE_SIGN_STYLE = Automatic;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = DisneyQueues/Info.plist;
