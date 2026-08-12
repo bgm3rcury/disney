@@ -28,10 +28,14 @@ jobs:
             CODE_SIGN_IDENTITY="" 2>&1 | tee xcodebuild.log
           status=${PIPESTATUS[0]}
           if [ "$status" -ne 0 ]; then
-            echo "::group::xcodebuild tail"
-            tail -n 120 xcodebuild.log
+            echo "::group::xcodebuild errors"
+            grep -Ei "error:|failed|ARCHIVE FAILED|The following build commands failed|CompileSwift|SwiftCompile|actool|ibtool" xcodebuild.log | tail -n 80 || true
             echo "::endgroup::"
-            message=$(tail -n 80 xcodebuild.log | sed ':a;N;$!ba;s/%/%25/g;s/\r/%0D/g;s/\n/%0A/g')
+            errors=$(grep -Ei "error:|failed|ARCHIVE FAILED|The following build commands failed|CompileSwift|SwiftCompile|actool|ibtool" xcodebuild.log | tail -n 40)
+            if [ -z "$errors" ]; then
+              errors=$(tail -n 40 xcodebuild.log)
+            fi
+            message=$(printf "%s" "$errors" | sed ':a;N;$!ba;s/%/%25/g;s/\r/%0D/g;s/\n/%0A/g')
             echo "::error file=DisneyQueues.xcodeproj::xcodebuild failed%0A$message"
             exit "$status"
           fi
