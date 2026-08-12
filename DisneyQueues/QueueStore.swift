@@ -17,8 +17,9 @@ final class QueueStore: ObservableObject {
     private var refreshTask: Task<Void, Never>?
     private let favoritesKey = "favoriteAttractions"
 
-    init(api: QueueAPI = QueueAPI(), notificationService: QueueNotificationService = QueueNotificationService()) {
+    init(api: QueueAPI = QueueAPI()) {
         self.api = api
+        let notificationService = QueueNotificationService()
         self.notificationService = notificationService
         self.favorites = Set(UserDefaults.standard.stringArray(forKey: favoritesKey) ?? [])
         self.notificationsEnabled = notificationService.notificationsEnabled
